@@ -21,6 +21,17 @@ This is a simple neural network to detect SMS spam. The dataset can be found on 
 > 
 > X_test = vectorizer.transform(X_test)
 
+# Model Architechture
+```python
+model = Sequential([
+    Dense(128, activation='relu', input_shape=(X_train.shape[1],)),
+    Dropout(0.5),
+    Dense(64, activation='relu'),
+    Dropout(0.3),
+    Dense(1, activation='sigmoid')
+])
+```
+
 # Deployment
 1. Make a directory for the project.
    ```
