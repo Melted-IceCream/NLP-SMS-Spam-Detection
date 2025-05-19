@@ -12,7 +12,7 @@ This is a simple neural network to detect SMS spam. The dataset can be found on 
 # Data Preprocessing
 1. Special characters and punctuations are removed from the data as it has no significant value to the neural network.
 > word.translate(str.maketrans('', '', string.punctuation))
-2. The text is then vectorized so that the neural network can understand it easier.
+2. The text is then vectorized so that the neural network can understand it easier. Stopwords removal is also built into the TFIDF vectorizer function.
 > from sklearn.feature_extraction.text import TfidfVectorizer
 >
 > vectorizer = TfidfVectorizer(stop_words='english')
