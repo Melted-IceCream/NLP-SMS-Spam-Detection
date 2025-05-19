@@ -1,4 +1,4 @@
-This is a simple neural network to detect SMS spam. The dataset can be found on https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset.
+This is a simple neural network to detect SMS spam. The dataset can be found on [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset).
 
 # Results
 > Accuracy: 0.981166
